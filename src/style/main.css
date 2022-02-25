@@ -1,3 +1,12 @@
+/* ----- active link ----- */
+a {
+  color: white;
+  transition: 0.5s;
+}
+a:hover {
+  color: #bdae82;
+}
+
 *,
 *::before,
 *::after {
@@ -25,6 +34,21 @@ html {
 
 body {
   box-sizing: border-box;
+}
+
+.section-heading {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 6rem;
+  background-image: linear-gradient(to top, black 49%, #bdae82 49%, #bdae82 51%, black 51%);
+}
+.section-heading__title {
+  padding: 0 2rem;
+  font: bold 4rem/2 "Merriweather", sans-serif;
+  background-color: black;
+  color: #bdae82;
 }
 
 .header {
