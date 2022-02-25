@@ -2,7 +2,7 @@
   transition: all 0.3s ease-out;
 }
 
-.skills {
+.portfolio, .skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -260,6 +260,46 @@ body {
 .skills__item p {
   width: 28rem;
   font: 1.8rem/2 "Inter", sans-serif;
+}
+
+.portfolio__btns {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 6rem 6rem;
+}
+.portfolio__box {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2.5rem;
+}
+.portfolio__item {
+  width: 45rem;
+  height: 56rem;
+}
+.portfolio__item:nth-child(1) {
+  background-image: url("../assets/img/portfolio-img1.jpg");
+  background-size: cover;
+}
+.portfolio__item:nth-child(2) {
+  background-image: url("../assets/img/portfolio-img2.jpg");
+  background-size: cover;
+}
+.portfolio__item:nth-child(3) {
+  background-image: url("../assets/img/portfolio-img3.jpg");
+  background-size: cover;
+}
+.portfolio__item:nth-child(4) {
+  background-image: url("../assets/img/portfolio-img4.jpg");
+  background-size: cover;
+}
+.portfolio__item:nth-child(5) {
+  background-image: url("../assets/img/portfolio-img5.jpg");
+  background-size: cover;
+}
+.portfolio__item:nth-child(6) {
+  background-image: url("../assets/img/portfolio-img6.jpg");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
