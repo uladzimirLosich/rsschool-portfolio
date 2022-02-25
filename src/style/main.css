@@ -1,3 +1,11 @@
+.footer .social-item__link {
+  transition: all 0.3s ease-out;
+}
+
+.footer .social-item__link:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
 /* ----- active link ----- */
 a {
   color: white;
@@ -71,12 +79,93 @@ body {
   width: 7rem;
 }
 
+.footer {
+  font: 2rem/1.5 "Inter", sans-serif;
+  background-color: black;
+  color: white;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 15rem;
+}
+.footer__data {
+  display: inline-flex;
+  width: 16.8rem;
+  justify-content: space-between;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  width: 18.8rem;
+}
+.footer .social-item {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.footer .social-item__link {
+  flex: 0 1 15%;
+  height: 3.2rem;
+  background: no-repeat center/contain;
+}
+.footer .social-item__link:nth-child(1) {
+  background-image: url("../assets/img/Vectorinst.svg");
+}
+.footer .social-item__link:nth-child(2) {
+  background-image: url("../assets/img/Vectorfb.svg");
+}
+.footer .social-item__link:nth-child(3) {
+  background-image: url("../assets/img/Vectortwitter.svg");
+}
+.footer .social-item__link:nth-child(4) {
+  background-image: url("../assets/img/Vectorpinterest.svg");
+}
+
 .content-wrapper {
   max-width: 144rem;
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
   overflow: hidden;
+}
+
+/*---------- HERO ----------*/
+.section-hero {
+  background-color: black;
+  color: white;
+}
+
+/*---------- SKILLS ----------*/
+.section-skills {
+  background-color: black;
+  color: white;
+}
+
+/*---------- PORTFOLIO ----------*/
+.section-portfolio {
+  background-color: black;
+  color: white;
+}
+
+/*---------- VIDEO ----------*/
+.section-video {
+  background-color: black;
+  color: white;
+}
+
+/*---------- PRICE ----------*/
+.section-price {
+  background-color: black;
+  color: white;
+}
+
+/*---------- CONTACTS ----------*/
+.section-contacts {
+  background-color: black;
+  color: #bdae82;
 }
 
 .logo {
