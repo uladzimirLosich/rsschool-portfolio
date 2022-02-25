@@ -132,6 +132,22 @@ body {
   overflow: hidden;
 }
 
+.layout-3-col {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+  width: 100%;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.layout-4-col {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 /*---------- HERO ----------*/
 .section-hero {
   background-color: black;
@@ -185,6 +201,29 @@ body {
   display: inline-flex;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 82rem;
+  background: url("../assets/img/background-hero.jpg") no-repeat center -9rem;
+}
+.hero__heading {
+  position: absolute;
+  top: 16rem;
+  left: 8rem;
+}
+.hero__heading-title {
+  display: block;
+  padding-bottom: 1rem;
+  font: bold 6rem/2 "Merriweather", sans-serif;
+}
+.hero__heading-subtitle {
+  display: block;
+  max-width: 47rem;
+  padding-bottom: 2.5rem;
+  font: 2rem/2 "Inter", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
