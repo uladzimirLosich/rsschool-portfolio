@@ -1,3 +1,77 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
 
+ul[class], ol[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  min-height: 100vh;
+  font-size: 62.5%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.header {
+  font: 2rem/1.5 "Inter", sans-serif;
+  background-color: black;
+  color: white;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 9rem;
+  background: url("../assets/img/background-hero.jpg") no-repeat top;
+}
+.header__nav {
+  width: 50rem;
+  margin-left: auto;
+}
+.header__lang-switch {
+  width: 7rem;
+}
+
+.content-wrapper {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: hidden;
+}
+
+.logo {
+  min-width: 5rem;
+  min-height: 5rem;
+  background: url("../assets/img/vector-logo.svg") no-repeat center/contain;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+.header {
+  font: 2rem/1.5 'Inter', sans-serif;
+  background-color: rgba($color-primary-black, 1);
+  color: rgba($color-secondary-white, 1);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 9rem;
+    background: url("../assets/img/background-hero.jpg") no-repeat top;
+  }
+
+  &__nav {
+    width: 50rem;
+    margin-left: auto;
+  }
+
+  &__lang-switch {
+    width: 7rem;
+  }
+}
