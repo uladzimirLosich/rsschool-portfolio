@@ -1,15 +1,15 @@
-.footer .social-item__link {
+.video__player-btn, .footer .social-item__link {
   transition: all 0.3s ease-out;
 }
 
-.portfolio, .skills {
+.video, .portfolio, .skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10rem;
 }
 
-.footer .social-item__link:hover {
+.video__player-btn:hover, .footer .social-item__link:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
@@ -300,6 +300,20 @@ body {
 .portfolio__item:nth-child(6) {
   background-image: url("../assets/img/portfolio-img6.jpg");
   background-size: cover;
+}
+
+.video__player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70.5rem;
+  background: url("../assets/img/video-player.jpg") no-repeat center/contain;
+}
+.video__player-btn {
+  width: 13rem;
+  height: 13rem;
+  background: url("../assets/img/Play_hover.svg") no-repeat center/cover;
 }
 
 /*# sourceMappingURL=main.css.map */
