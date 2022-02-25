@@ -1,0 +1,45 @@
+.contacts {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  height: 70rem;
+  padding: 6rem 2rem 0 0;
+  background-image: url("../assets/img/contacts.jpg") ;
+
+  &__box {
+    display: flex;
+    flex-flow: column nowrap;
+
+    & form {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    & input,
+    textarea {
+      width: 45rem;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1.8rem;
+      background: rgba($color-primary-black, 0.5);
+      font: 2rem/2 'Inter', serif;
+      border: 0.2rem solid rgba($color-tertiary-gold, 1);
+    }
+
+    & textarea {
+      height: 10rem;
+      margin-bottom: 2.3rem;
+      resize: none;
+    }
+
+    & input::placeholder,
+    textarea::placeholder {
+      color: rgba($color-tertiary-gold, 1);
+    }
+
+    & h2 {
+      margin-bottom: 4rem;
+      padding: 0;
+      background: transparent;
+    }
+  }
+}

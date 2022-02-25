@@ -1,0 +1,31 @@
+.price {
+
+  @extend %sectionLayout;
+
+  &__item {
+    flex: 0 1 33.33%;
+    padding: 4.1rem 0;
+    font: bold 2.8rem/2 'Merriweather', sans-serif;
+    color: rgba($color-secondary-white, 1);
+    border: 0.3rem solid rgba($color-tertiary-gold, 1);
+
+    & h4 {
+      padding-bottom: 3.2rem;
+    }
+
+    & p {
+      padding-bottom: 2rem;
+      font: bold 2.4rem/2 'Merriweather', sans-serif;
+      color: rgba($color-tertiary-gold, 1);
+    }
+  }
+
+  &__text {
+    padding-bottom: 3.5rem;
+    font: 1.8rem/2 'Inter', sans-serif;
+
+    & span {
+      display: block;
+    }
+  }
+}

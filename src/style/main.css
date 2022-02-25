@@ -2,7 +2,7 @@
   transition: all 0.3s ease-out;
 }
 
-.video, .portfolio, .skills {
+.price, .video, .portfolio, .skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,6 +314,69 @@ body {
   width: 13rem;
   height: 13rem;
   background: url("../assets/img/Play_hover.svg") no-repeat center/cover;
+}
+
+.price__item {
+  flex: 0 1 33.33%;
+  padding: 4.1rem 0;
+  font: bold 2.8rem/2 "Merriweather", sans-serif;
+  color: white;
+  border: 0.3rem solid #bdae82;
+}
+.price__item h4 {
+  padding-bottom: 3.2rem;
+}
+.price__item p {
+  padding-bottom: 2rem;
+  font: bold 2.4rem/2 "Merriweather", sans-serif;
+  color: #bdae82;
+}
+.price__text {
+  padding-bottom: 3.5rem;
+  font: 1.8rem/2 "Inter", sans-serif;
+}
+.price__text span {
+  display: block;
+}
+
+.contacts {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  height: 70rem;
+  padding: 6rem 2rem 0 0;
+  background-image: url("../assets/img/contacts.jpg");
+}
+.contacts__box {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.contacts__box form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.contacts__box input,
+.contacts__box textarea {
+  width: 45rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1.8rem;
+  background: rgba(0, 0, 0, 0.5);
+  font: 2rem/2 "Inter", serif;
+  border: 0.2rem solid #bdae82;
+}
+.contacts__box textarea {
+  height: 10rem;
+  margin-bottom: 2.3rem;
+  resize: none;
+}
+.contacts__box input::placeholder,
+.contacts__box textarea::placeholder {
+  color: #bdae82;
+}
+.contacts__box h2 {
+  margin-bottom: 4rem;
+  padding: 0;
+  background: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */
