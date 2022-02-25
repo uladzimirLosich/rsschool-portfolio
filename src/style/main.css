@@ -2,6 +2,13 @@
   transition: all 0.3s ease-out;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
 .footer .social-item__link:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
@@ -224,6 +231,35 @@ body {
   max-width: 47rem;
   padding-bottom: 2.5rem;
   font: 2rem/2 "Inter", sans-serif;
+}
+
+.skills__item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 24rem;
+  padding: 10rem 2rem 0.7rem;
+  background: no-repeat center top;
+  text-align: center;
+}
+.skills__item:nth-child(1) {
+  background-image: url("../assets/img/camera 1.svg");
+}
+.skills__item:nth-child(2) {
+  background-image: url("../assets/img/video 1.svg");
+}
+.skills__item:nth-child(3) {
+  background-image: url("../assets/img/image 1.svg");
+}
+.skills__item:nth-child(4) {
+  background-image: url("../assets/img/mic 1.svg");
+}
+.skills__item h3 {
+  font: bold 2rem/2 "Inter", sans-serif;
+}
+.skills__item p {
+  width: 28rem;
+  font: 1.8rem/2 "Inter", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
