@@ -46,6 +46,16 @@ html {
   text-rendering: optimizeSpeed;
   scroll-behavior: smooth;
 }
+@media screen and (max-width: 26.5625em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+@media screen and (max-width: 20em) {
+  html {
+    font-size: 31.25%;
+  }
+}
 
 body {
   box-sizing: border-box;
@@ -137,6 +147,12 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
   overflow: hidden;
+}
+@media screen and (max-width: 48em) {
+  .content-wrapper {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }
 
 .layout-3-col {
