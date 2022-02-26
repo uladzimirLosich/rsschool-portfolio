@@ -46,10 +46,19 @@ html {
   text-rendering: optimizeSpeed;
   scroll-behavior: smooth;
 }
+@media screen and (max-width: 26.5625em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+@media screen and (max-width: 20em) {
+  html {
+    font-size: 31.25%;
+  }
+}
 
 body {
   box-sizing: border-box;
-  background: #000000;
 }
 
 .section-heading {
@@ -79,12 +88,41 @@ body {
   min-height: 9rem;
   background: url("../assets/img/background-hero.jpg") no-repeat top;
 }
+@media screen and (max-width: 48em) {
+  .header__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 10;
+  }
+}
 .header__nav {
   width: 50rem;
   margin-left: auto;
 }
+@media screen and (max-width: 90em) {
+  .header__nav {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 48em) {
+  .header__nav {
+    display: none;
+  }
+}
 .header__lang-switch {
   width: 7rem;
+}
+@media screen and (max-width: 48em) {
+  .header__lang-switch {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 26.5625em) {
+  .header__lang-switch {
+    margin-left: auto;
+  }
 }
 
 .footer {
@@ -97,6 +135,13 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 15rem;
+}
+@media screen and (max-width: 48em) {
+  .footer__content {
+    flex-flow: column nowrap;
+    min-height: 19rem;
+    padding: 2.4rem;
+  }
 }
 .footer__data {
   display: inline-flex;
@@ -133,11 +178,17 @@ body {
 }
 
 .content-wrapper {
-  width: 144rem;
+  max-width: 144rem;
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
   overflow: hidden;
+}
+@media screen and (max-width: 48em) {
+  .content-wrapper {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }
 
 .layout-3-col {
@@ -149,11 +200,34 @@ body {
   padding-bottom: 10rem;
   text-align: center;
 }
+@media screen and (max-width: 48em) {
+  .layout-3-col {
+    flex-flow: column wrap;
+    gap: 5rem;
+    width: 65%;
+  }
+}
 
 .layout-4-col {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+@media screen and (max-width: 90em) {
+  .layout-4-col {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 64em) {
+  .layout-4-col {
+    gap: 3.6rem 4.4rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .layout-4-col {
+    gap: 3.6rem 4.4rem;
+  }
 }
 
 /*---------- HERO ----------*/
@@ -211,6 +285,47 @@ body {
   width: 100%;
 }
 
+.hamburger__line, .hamburger:after, .hamburger:before {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #ffffff;
+}
+
+.hamburger {
+  position: relative;
+  display: none;
+  width: 5rem;
+  height: 2.8rem;
+  padding: 1.1rem 0;
+  margin-left: 2rem;
+}
+.hamburger:before {
+  content: "";
+  top: 0;
+  left: 0;
+}
+.hamburger:after {
+  content: "";
+  bottom: 0;
+  left: 0;
+}
+@media screen and (max-width: 90em) {
+  .hamburger {
+    display: none;
+  }
+}
+@media screen and (max-width: 48em) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+.hamburger__line {
+  top: calc(50% - 0.15rem);
+  left: 0;
+}
+
 .btn {
   width: 22rem;
   min-height: 5.5rem;
@@ -240,21 +355,48 @@ body {
   height: 82rem;
   background: url("../assets/img/background-hero.jpg") no-repeat center -9rem;
 }
+@media screen and (max-width: 48em) {
+  .hero {
+    width: 100%;
+    height: 59rem;
+    background-position: -0.5em -3em;
+    background-size: auto 62rem;
+  }
+}
 .hero__heading {
   position: absolute;
   top: 16rem;
   left: 8rem;
+}
+@media screen and (max-width: 48em) {
+  .hero__heading {
+    top: 16.8rem;
+    left: 6rem;
+  }
 }
 .hero__heading-title {
   display: block;
   padding-bottom: 1rem;
   font: bold 6rem/2 "Merriweather", sans-serif;
 }
+@media screen and (max-width: 48em) {
+  .hero__heading-title {
+    font-size: 3.2rem;
+    padding-bottom: 2rem;
+  }
+}
 .hero__heading-subtitle {
   display: block;
   max-width: 47rem;
   padding-bottom: 2.5rem;
   font: 2rem/2 "Inter", sans-serif;
+}
+@media screen and (max-width: 48em) {
+  .hero__heading-subtitle {
+    max-width: 39rem;
+    line-height: 2.4rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .skills__item {
@@ -265,6 +407,18 @@ body {
   padding: 10rem 2rem 0.7rem;
   background: no-repeat center top;
   text-align: center;
+}
+@media screen and (max-width: 48em) {
+  .skills__item {
+    justify-content: center;
+    gap: 2rem;
+    padding: 10rem 0 0;
+  }
+}
+@media screen and (max-width: 26.5625em) {
+  .skills__item {
+    background-size: 25%;
+  }
 }
 .skills__item:nth-child(1) {
   background-image: url("../assets/img/camera 1.svg");
@@ -278,6 +432,11 @@ body {
 .skills__item:nth-child(4) {
   background-image: url("../assets/img/mic 1.svg");
 }
+@media screen and (max-width: 26.5625em) {
+  .skills__item:nth-child(4) {
+    background-size: 13%;
+  }
+}
 .skills__item h3 {
   font: bold 2rem/2 "Inter", sans-serif;
 }
@@ -285,17 +444,49 @@ body {
   width: 28rem;
   font: 1.8rem/2 "Inter", sans-serif;
 }
+@media screen and (max-width: 48em) {
+  .skills__item p {
+    line-height: 1.2;
+  }
+}
 
 .portfolio__btns {
   display: flex;
   gap: 0.5rem;
   padding: 0 6rem 6rem;
 }
+@media screen and (max-width: 90em) {
+  .portfolio__btns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 64em) {
+  .portfolio__btns {
+    padding: 0 16rem 6rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .portfolio__btns {
+    flex-wrap: wrap;
+    padding: 0 6rem 6rem;
+  }
+}
 .portfolio__box {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   gap: 2.5rem;
+}
+@media screen and (max-width: 90em) {
+  .portfolio__box {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 48em) {
+  .portfolio__box {
+    flex-flow: column nowrap;
+  }
 }
 .portfolio__item {
   width: 45rem;
@@ -334,10 +525,22 @@ body {
   height: 70.5rem;
   background: url("../assets/img/video-player.jpg") no-repeat center/contain;
 }
+@media screen and (max-width: 48em) {
+  .video__player {
+    width: 76.8rem;
+    max-height: 39rem;
+  }
+}
 .video__player-btn {
   width: 13rem;
   height: 13rem;
   background: url("../assets/img/Play_hover.svg") no-repeat center/cover;
+}
+@media screen and (max-width: 48em) {
+  .video__player-btn {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
 }
 
 .price__item {
@@ -370,6 +573,16 @@ body {
   height: 70rem;
   padding: 6rem 2rem 0 0;
   background-image: url("../assets/img/contacts.jpg");
+}
+@media screen and (max-width: 48em) {
+  .contacts {
+    max-width: 100%;
+    height: 60rem;
+    align-content: center;
+    padding: 6rem 6rem 0;
+    background-position: -23rem;
+    background-size: cover;
+  }
 }
 .contacts__box {
   display: flex;

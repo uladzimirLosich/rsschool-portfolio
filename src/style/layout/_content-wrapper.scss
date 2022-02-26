@@ -1,7 +1,12 @@
 .content-wrapper {
-  width: 144rem;
+  max-width: 144rem;
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
   overflow: hidden;
+
+  @include responseMode(tablet) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }

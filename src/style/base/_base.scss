@@ -21,9 +21,15 @@ html {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   scroll-behavior: smooth;
+
+  @include responseMode(mobile-l) {
+    font-size: 37.5%;
+  }
+  @include responseMode(mobile-s) {
+    font-size: 31.25%;
+  }
 }
 
 body {
   box-sizing: border-box;
-  background: $color-primary-black;
 }

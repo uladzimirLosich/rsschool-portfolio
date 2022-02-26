@@ -11,6 +11,15 @@
     background: no-repeat center top;
     text-align: center;
 
+    @include responseMode (tablet) {
+      justify-content: center;
+      gap: 2rem;
+      padding: 10rem 0 0;
+    }
+    @include responseMode(mobile-l) {
+      background-size: 25%;
+    }
+
     &:nth-child(1) {
       background-image: url("../assets/img/camera 1.svg");
     }
@@ -25,6 +34,10 @@
 
     &:nth-child(4) {
       background-image: url("../assets/img/mic 1.svg");
+
+      @include responseMode(mobile-l) {
+        background-size: 13%;
+      }
     }
 
     & h3 {
@@ -34,6 +47,10 @@
     & p {
       width: 28rem;
       font: 1.8rem/2 'Inter', sans-serif;
+
+      @include responseMode(tablet) {
+        line-height: 1.2;
+      }
     }
   }
 }
