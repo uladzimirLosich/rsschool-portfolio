@@ -408,6 +408,11 @@ body {
     justify-content: center;
   }
 }
+@media screen and (max-width: 64em) {
+  .portfolio__btns {
+    padding: 0 16rem 6rem;
+  }
+}
 @media screen and (max-width: 48em) {
   .portfolio__btns {
     flex-wrap: wrap;
@@ -467,10 +472,22 @@ body {
   height: 70.5rem;
   background: url("../assets/img/video-player.jpg") no-repeat center/contain;
 }
+@media screen and (max-width: 48em) {
+  .video__player {
+    width: 76.8rem;
+    max-height: 39rem;
+  }
+}
 .video__player-btn {
   width: 13rem;
   height: 13rem;
   background: url("../assets/img/Play_hover.svg") no-repeat center/cover;
+}
+@media screen and (max-width: 48em) {
+  .video__player-btn {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
 }
 
 .price__item {

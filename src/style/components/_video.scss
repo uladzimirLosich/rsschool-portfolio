@@ -10,6 +10,11 @@
     height: 70.5rem;
     background: url("../assets/img/video-player.jpg") no-repeat center/contain;
 
+    @include responseMode(tablet) {
+      width: 76.8rem;
+      max-height: 39rem;
+    }
+
     &-btn {
       width: 13rem;
       height: 13rem;
@@ -18,6 +23,11 @@
       @extend %transition;
 
       @extend %hoverSvgIcon;
+
+      @include responseMode(tablet) {
+        width: 7.5rem;
+        height: 7.5rem;
+      }
     }
   }
 }

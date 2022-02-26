@@ -11,7 +11,7 @@
       flex-wrap: wrap;
       justify-content: center;
     }
-    @include responseMode(tablet-port) {
+    @include responseMode(tablet-land) {
       padding: 0 16rem 6rem;
     }
     @include responseMode(tablet) {
