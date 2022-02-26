@@ -2,4 +2,15 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @include responseMode(desktop) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include responseMode(tablet-land) {
+    gap: 3.6rem 4.4rem;
+  }
+  @include responseMode(tablet) {
+    gap: 3.6rem 4.4rem;
+  }
 }

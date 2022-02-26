@@ -206,6 +206,22 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+@media screen and (max-width: 90em) {
+  .layout-4-col {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 64em) {
+  .layout-4-col {
+    gap: 3.6rem 4.4rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .layout-4-col {
+    gap: 3.6rem 4.4rem;
+  }
+}
 
 /*---------- HERO ----------*/
 .section-hero {
@@ -344,6 +360,18 @@ body {
   background: no-repeat center top;
   text-align: center;
 }
+@media screen and (max-width: 48em) {
+  .skills__item {
+    justify-content: center;
+    gap: 2rem;
+    padding: 10rem 0 0;
+  }
+}
+@media screen and (max-width: 26.5625em) {
+  .skills__item {
+    background-size: 25%;
+  }
+}
 .skills__item:nth-child(1) {
   background-image: url("../assets/img/camera 1.svg");
 }
@@ -362,6 +390,11 @@ body {
 .skills__item p {
   width: 28rem;
   font: 1.8rem/2 "Inter", sans-serif;
+}
+@media screen and (max-width: 48em) {
+  .skills__item p {
+    line-height: 1.2;
+  }
 }
 
 .portfolio__btns {
