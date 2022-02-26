@@ -1,0 +1,24 @@
+.hero {
+  position: relative;
+  height: 82rem;
+  background: url("../assets/img/background-hero.jpg") no-repeat center -9rem;
+
+  &__heading {
+    position: absolute;
+    top: 16rem;
+    left: 8rem;
+
+    &-title {
+      display: block;
+      padding-bottom: 1rem;
+      font: bold 6rem/2 'Merriweather', sans-serif;
+    }
+
+    &-subtitle {
+      display: block;
+      max-width: 47rem;
+      padding-bottom: 2.5rem;
+      font: 2rem/2 'Inter', sans-serif;
+    }
+  }
+}

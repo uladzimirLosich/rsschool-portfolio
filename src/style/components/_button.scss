@@ -1,0 +1,31 @@
+.btn {
+  width: 22rem;
+  min-height: 5.5rem;
+  font: 2rem/2 'Inter', sans-serif;
+  cursor: pointer;
+
+  &_colored {
+    background-color: rgba($color-tertiary-gold, 1);
+    color: rgba($color-primary-black, 1);
+    border: none;
+
+    &:hover {
+      color: rgba($color-secondary-white, 1);
+
+      @extend %transition;
+    }
+  }
+
+  &_non-colored {
+    background-color: rgba($color-primary-black, 1);
+    color: rgba($color-tertiary-gold, 1);
+    border: 0.2rem solid rgba($color-tertiary-gold, 1);
+
+    &:hover {
+      background-color: rgba($color-tertiary-gold, 1);
+      color: rgba($color-secondary-white, 1);
+
+      @extend %transition;
+    }
+  }
+}

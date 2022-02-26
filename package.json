@@ -1,0 +1,23 @@
+{
+  "name": "rsschool-portfolio",
+  "version": "1.0.0",
+  "description": "study project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/style/main.scss src/style/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uladzimirLosich/rsschool-portfolio.git"
+  },
+  "author": "Uladzimir Losich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uladzimirLosich/rsschool-portfolio/issues"
+  },
+  "homepage": "https://github.com/uladzimirLosich/rsschool-portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}

@@ -1,0 +1,406 @@
+.video__player-btn, .btn_non-colored:hover, .btn_colored:hover, .footer .social-item__link {
+  transition: all 0.3s ease-out;
+}
+
+.price, .video, .portfolio, .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.video__player-btn:hover, .footer .social-item__link:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+/* ----- active link ----- */
+a {
+  color: white;
+  transition: 0.5s;
+}
+a:hover {
+  color: #bdae82;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+ul[class], ol[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  min-height: 100vh;
+  font-size: 62.5%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  background: #000000;
+}
+
+.section-heading {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 6rem;
+  background-image: linear-gradient(to top, black 49%, #bdae82 49%, #bdae82 51%, black 51%);
+}
+.section-heading__title {
+  padding: 0 2rem;
+  font: bold 4rem/2 "Merriweather", sans-serif;
+  background-color: black;
+  color: #bdae82;
+}
+
+.header {
+  font: 2rem/1.5 "Inter", sans-serif;
+  background-color: black;
+  color: white;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 9rem;
+  background: url("../assets/img/background-hero.jpg") no-repeat top;
+}
+.header__nav {
+  width: 50rem;
+  margin-left: auto;
+}
+.header__lang-switch {
+  width: 7rem;
+}
+
+.footer {
+  font: 2rem/1.5 "Inter", sans-serif;
+  background-color: black;
+  color: white;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 15rem;
+}
+.footer__data {
+  display: inline-flex;
+  width: 16.8rem;
+  justify-content: space-between;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  width: 18.8rem;
+}
+.footer .social-item {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.footer .social-item__link {
+  flex: 0 1 15%;
+  height: 3.2rem;
+  background: no-repeat center/contain;
+}
+.footer .social-item__link:nth-child(1) {
+  background-image: url("../assets/img/Vectorinst.svg");
+}
+.footer .social-item__link:nth-child(2) {
+  background-image: url("../assets/img/Vectorfb.svg");
+}
+.footer .social-item__link:nth-child(3) {
+  background-image: url("../assets/img/Vectortwitter.svg");
+}
+.footer .social-item__link:nth-child(4) {
+  background-image: url("../assets/img/Vectorpinterest.svg");
+}
+
+.content-wrapper {
+  width: 144rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: hidden;
+}
+
+.layout-3-col {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+  width: 100%;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.layout-4-col {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*---------- HERO ----------*/
+.section-hero {
+  background-color: black;
+  color: white;
+}
+
+/*---------- SKILLS ----------*/
+.section-skills {
+  background-color: black;
+  color: white;
+}
+
+/*---------- PORTFOLIO ----------*/
+.section-portfolio {
+  background-color: black;
+  color: white;
+}
+
+/*---------- VIDEO ----------*/
+.section-video {
+  background-color: black;
+  color: white;
+}
+
+/*---------- PRICE ----------*/
+.section-price {
+  background-color: black;
+  color: white;
+}
+
+/*---------- CONTACTS ----------*/
+.section-contacts {
+  background-color: black;
+  color: #bdae82;
+}
+
+.logo {
+  min-width: 5rem;
+  min-height: 5rem;
+  background: url("../assets/img/vector-logo.svg") no-repeat center/contain;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.btn {
+  width: 22rem;
+  min-height: 5.5rem;
+  font: 2rem/2 "Inter", sans-serif;
+  cursor: pointer;
+}
+.btn_colored {
+  background-color: #bdae82;
+  color: black;
+  border: none;
+}
+.btn_colored:hover {
+  color: white;
+}
+.btn_non-colored {
+  background-color: black;
+  color: #bdae82;
+  border: 0.2rem solid #bdae82;
+}
+.btn_non-colored:hover {
+  background-color: #bdae82;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  height: 82rem;
+  background: url("../assets/img/background-hero.jpg") no-repeat center -9rem;
+}
+.hero__heading {
+  position: absolute;
+  top: 16rem;
+  left: 8rem;
+}
+.hero__heading-title {
+  display: block;
+  padding-bottom: 1rem;
+  font: bold 6rem/2 "Merriweather", sans-serif;
+}
+.hero__heading-subtitle {
+  display: block;
+  max-width: 47rem;
+  padding-bottom: 2.5rem;
+  font: 2rem/2 "Inter", sans-serif;
+}
+
+.skills__item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 24rem;
+  padding: 10rem 2rem 0.7rem;
+  background: no-repeat center top;
+  text-align: center;
+}
+.skills__item:nth-child(1) {
+  background-image: url("../assets/img/camera 1.svg");
+}
+.skills__item:nth-child(2) {
+  background-image: url("../assets/img/video 1.svg");
+}
+.skills__item:nth-child(3) {
+  background-image: url("../assets/img/image 1.svg");
+}
+.skills__item:nth-child(4) {
+  background-image: url("../assets/img/mic 1.svg");
+}
+.skills__item h3 {
+  font: bold 2rem/2 "Inter", sans-serif;
+}
+.skills__item p {
+  width: 28rem;
+  font: 1.8rem/2 "Inter", sans-serif;
+}
+
+.portfolio__btns {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 6rem 6rem;
+}
+.portfolio__box {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2.5rem;
+}
+.portfolio__item {
+  width: 45rem;
+  height: 56rem;
+}
+.portfolio__item:nth-child(1) {
+  background-image: url("../assets/img/portfolio-img1.jpg");
+  background-size: cover;
+}
+.portfolio__item:nth-child(2) {
+  background-image: url("../assets/img/portfolio-img2.jpg");
+  background-size: cover;
+}
+.portfolio__item:nth-child(3) {
+  background-image: url("../assets/img/portfolio-img3.jpg");
+  background-size: cover;
+}
+.portfolio__item:nth-child(4) {
+  background-image: url("../assets/img/portfolio-img4.jpg");
+  background-size: cover;
+}
+.portfolio__item:nth-child(5) {
+  background-image: url("../assets/img/portfolio-img5.jpg");
+  background-size: cover;
+}
+.portfolio__item:nth-child(6) {
+  background-image: url("../assets/img/portfolio-img6.jpg");
+  background-size: cover;
+}
+
+.video__player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70.5rem;
+  background: url("../assets/img/video-player.jpg") no-repeat center/contain;
+}
+.video__player-btn {
+  width: 13rem;
+  height: 13rem;
+  background: url("../assets/img/Play_hover.svg") no-repeat center/cover;
+}
+
+.price__item {
+  flex: 0 1 33.33%;
+  padding: 4.1rem 0;
+  font: bold 2.8rem/2 "Merriweather", sans-serif;
+  color: white;
+  border: 0.3rem solid #bdae82;
+}
+.price__item h4 {
+  padding-bottom: 3.2rem;
+}
+.price__item p {
+  padding-bottom: 2rem;
+  font: bold 2.4rem/2 "Merriweather", sans-serif;
+  color: #bdae82;
+}
+.price__text {
+  padding-bottom: 3.5rem;
+  font: 1.8rem/2 "Inter", sans-serif;
+}
+.price__text span {
+  display: block;
+}
+
+.contacts {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  height: 70rem;
+  padding: 6rem 2rem 0 0;
+  background-image: url("../assets/img/contacts.jpg");
+}
+.contacts__box {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.contacts__box form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.contacts__box input,
+.contacts__box textarea {
+  width: 45rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1.8rem;
+  background: rgba(0, 0, 0, 0.5);
+  font: 2rem/2 "Inter", serif;
+  border: 0.2rem solid #bdae82;
+}
+.contacts__box textarea {
+  height: 10rem;
+  margin-bottom: 2.3rem;
+  resize: none;
+}
+.contacts__box input::placeholder,
+.contacts__box textarea::placeholder {
+  color: #bdae82;
+}
+.contacts__box h2 {
+  margin-bottom: 4rem;
+  padding: 0;
+  background: transparent;
+}
+
+/*# sourceMappingURL=main.css.map */
