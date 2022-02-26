@@ -9,14 +9,36 @@
     width: 100%;
     min-height: 9rem;
     background: url("../assets/img/background-hero.jpg") no-repeat top;
+
+    @include responseMode(tablet) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: transparent;
+      z-index: 10;
+    }
   }
 
   &__nav {
     width: 50rem;
     margin-left: auto;
+
+    @include responseMode(desktop) {
+      display: inline-block;
+    }
+    @include responseMode(tablet) {
+      display: none;
+    }
   }
 
   &__lang-switch {
     width: 7rem;
+
+    @include responseMode(tablet) {
+      margin-left: auto;
+    }
+    @include responseMode(mobile-l) {
+      margin-left: auto;
+    }
   }
 }

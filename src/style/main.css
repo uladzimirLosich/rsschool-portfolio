@@ -88,12 +88,41 @@ body {
   min-height: 9rem;
   background: url("../assets/img/background-hero.jpg") no-repeat top;
 }
+@media screen and (max-width: 48em) {
+  .header__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 10;
+  }
+}
 .header__nav {
   width: 50rem;
   margin-left: auto;
 }
+@media screen and (max-width: 90em) {
+  .header__nav {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 48em) {
+  .header__nav {
+    display: none;
+  }
+}
 .header__lang-switch {
   width: 7rem;
+}
+@media screen and (max-width: 48em) {
+  .header__lang-switch {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 26.5625em) {
+  .header__lang-switch {
+    margin-left: auto;
+  }
 }
 
 .footer {
