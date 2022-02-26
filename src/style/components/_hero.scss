@@ -3,15 +3,32 @@
   height: 82rem;
   background: url("../assets/img/background-hero.jpg") no-repeat center -9rem;
 
+  @include responseMode(tablet) {
+    width: 100%;
+    height: 59rem;
+    background-position: -0.5em -3em;
+    background-size: auto 62rem;
+  }
+
   &__heading {
     position: absolute;
     top: 16rem;
     left: 8rem;
 
+    @include responseMode(tablet) {
+      top: 16.8rem;
+      left: 6rem;
+    }
+
     &-title {
       display: block;
       padding-bottom: 1rem;
       font: bold 6rem/2 'Merriweather', sans-serif;
+
+      @include responseMode(tablet) {
+        font-size: 3.2rem;
+        padding-bottom: 2rem;
+      }
     }
 
     &-subtitle {
@@ -19,6 +36,12 @@
       max-width: 47rem;
       padding-bottom: 2.5rem;
       font: 2rem/2 'Inter', sans-serif;
+
+      @include responseMode(tablet) {
+        max-width: 39rem;
+        line-height: 2.4rem;
+        padding-bottom: 6rem;
+      }
     }
   }
 }

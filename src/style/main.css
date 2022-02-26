@@ -291,21 +291,48 @@ body {
   height: 82rem;
   background: url("../assets/img/background-hero.jpg") no-repeat center -9rem;
 }
+@media screen and (max-width: 48em) {
+  .hero {
+    width: 100%;
+    height: 59rem;
+    background-position: -0.5em -3em;
+    background-size: auto 62rem;
+  }
+}
 .hero__heading {
   position: absolute;
   top: 16rem;
   left: 8rem;
+}
+@media screen and (max-width: 48em) {
+  .hero__heading {
+    top: 16.8rem;
+    left: 6rem;
+  }
 }
 .hero__heading-title {
   display: block;
   padding-bottom: 1rem;
   font: bold 6rem/2 "Merriweather", sans-serif;
 }
+@media screen and (max-width: 48em) {
+  .hero__heading-title {
+    font-size: 3.2rem;
+    padding-bottom: 2rem;
+  }
+}
 .hero__heading-subtitle {
   display: block;
   max-width: 47rem;
   padding-bottom: 2.5rem;
   font: 2rem/2 "Inter", sans-serif;
+}
+@media screen and (max-width: 48em) {
+  .hero__heading-subtitle {
+    max-width: 39rem;
+    line-height: 2.4rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .skills__item {
