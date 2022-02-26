@@ -285,6 +285,47 @@ body {
   width: 100%;
 }
 
+.hamburger__line, .hamburger:after, .hamburger:before {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #ffffff;
+}
+
+.hamburger {
+  position: relative;
+  display: none;
+  width: 5rem;
+  height: 2.8rem;
+  padding: 1.1rem 0;
+  margin-left: 2rem;
+}
+.hamburger:before {
+  content: "";
+  top: 0;
+  left: 0;
+}
+.hamburger:after {
+  content: "";
+  bottom: 0;
+  left: 0;
+}
+@media screen and (max-width: 90em) {
+  .hamburger {
+    display: none;
+  }
+}
+@media screen and (max-width: 48em) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+.hamburger__line {
+  top: calc(50% - 0.15rem);
+  left: 0;
+}
+
 .btn {
   width: 22rem;
   min-height: 5.5rem;
