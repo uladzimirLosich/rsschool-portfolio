@@ -136,6 +136,13 @@ body {
   align-items: center;
   min-height: 15rem;
 }
+@media screen and (max-width: 48em) {
+  .footer__content {
+    flex-flow: column nowrap;
+    min-height: 19rem;
+    padding: 2.4rem;
+  }
+}
 .footer__data {
   display: inline-flex;
   width: 16.8rem;
