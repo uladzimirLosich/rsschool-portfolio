@@ -7,12 +7,21 @@
 }
 
 .hamburger {
-  position: relative;
+  position: fixed;
   display: none;
   width: 5rem;
   height: 2.8rem;
+  right: 6rem;
   padding: 1.1rem 0;
   margin-left: 2rem;
+  z-index: 100;
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__menu {
+  }
 
   &:before {
     content: "";
@@ -40,5 +49,14 @@
     @extend %hamburgerLine;
     top: calc(50% - 0.15rem);
     left: 0;
+  }
+}
+
+.nav-tablet-list {
+  padding: 13.4rem 0 0 12.7rem;
+  font: 3.5rem/2 'Inter', sans-serif;
+
+  & li:not(:last-child) {
+    padding-bottom: 1.6rem;
   }
 }

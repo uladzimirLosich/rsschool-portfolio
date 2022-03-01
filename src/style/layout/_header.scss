@@ -19,7 +19,7 @@
     }
   }
 
-  &__nav {
+  &__nav-desktop {
     width: 50rem;
     margin-left: auto;
 
@@ -30,15 +30,26 @@
       display: none;
     }
   }
+  &__nav-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 62rem;
+    height: 102.4rem;
+    background: $color-primary-black;
+  }
+
 
   &__lang-switch {
     width: 7rem;
 
     @include responseMode(tablet) {
       margin-left: auto;
+      margin-right: 7rem;
     }
     @include responseMode(mobile-l) {
       margin-left: auto;
+      margin-right: 7rem;
     }
   }
 }
