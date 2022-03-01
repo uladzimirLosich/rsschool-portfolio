@@ -1,11 +1,3 @@
-%hamburgerLine {
-  position: absolute;
-  display: inline-block;
-  width: 100%;
-  height: 0.3rem;
-  background-color: $color-secondary-white;
-}
-
 .hamburger {
   position: fixed;
   display: none;
@@ -14,27 +6,51 @@
   right: 6rem;
   padding: 1.1rem 0;
   margin-left: 2rem;
-  z-index: 100;
 
-  &__checkbox {
+  &__background {
+    position: absolute;
     display: none;
+    width: 5rem;
+    height: 2.8rem;
+    top: 0;
+    background: rgba($color-primary-black, 0.5);
+    @extend %transition;
   }
 
   &__menu {
-  }
-
-  &:before {
-    content: "";
-    @extend %hamburgerLine;
+    position: absolute;
+    display: block;
+    width: 5rem;
+    height: 2.8rem;
     top: 0;
-    left: 0;
   }
 
-  &:after {
-    content: "";
-    @extend %hamburgerLine;
-    bottom: 0;
-    left: 0;
+  &__line {
+    position: relative;
+
+    &,
+    &:before,
+    &:after {
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 0.3rem;
+      background-color: $color-secondary-white;
+      z-index: 100;
+      top: calc(50% - 0.15rem);
+      left: 0;
+      @extend %transition;
+    }
+
+    &:before {
+      content: "";
+      top: -1rem;
+    }
+
+    &:after {
+      content: "";
+      top: 1rem;
+    }
   }
 
   @include responseMode(desktop) {
@@ -45,18 +61,50 @@
     display: inline-block;
   }
 
-  &__line {
-    @extend %hamburgerLine;
-    top: calc(50% - 0.15rem);
-    left: 0;
+  &__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 102.4rem;
+    visibility: hidden;
+    background: $color-primary-black;
+    @extend %transition;
+
+    &-list {
+      padding: 13.4rem 0 0 12.7rem;
+      font: 3.5rem/2 'Inter', sans-serif;
+
+      & li:not(:last-child) {
+        padding-bottom: 1.6rem;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ &__nav {
+    visibility: visible;
+    right: 0;
+  }
+
+  &__checkbox:checked ~ &__background {
+    display: block;
+    transform: scale(50, 100);
+  }
+
+  &__checkbox:checked + &__menu > span {
+    background: transparent;
+  }
+  &__checkbox:checked + &__menu > span:before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  &__checkbox:checked + &__menu > span:after {
+    top: 0;
+    transform: rotate(-45deg);
   }
 }
 
-.nav-tablet-list {
-  padding: 13.4rem 0 0 12.7rem;
-  font: 3.5rem/2 'Inter', sans-serif;
-
-  & li:not(:last-child) {
-    padding-bottom: 1.6rem;
-  }
-}
