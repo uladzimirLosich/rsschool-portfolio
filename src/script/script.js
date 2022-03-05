@@ -31,7 +31,7 @@ const portfolioImage = document.querySelectorAll('.portfolio__item')
 
 const changeItem = (e) => {
     if (e.target.dataset.season) {
-        portfolioImage.forEach((img, i) => img.src = `../src/assets/img/${e.target.dataset.season}/${i + 1}.jpg`)
+        portfolioImage.forEach((img, i) => img.src = `./src/assets/img/${e.target.dataset.season}/${i + 1}.jpg`)
     }
 }
 portfolioBtns.addEventListener('click', changeItem)
