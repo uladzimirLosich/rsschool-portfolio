@@ -31,8 +31,23 @@ const portfolioImage = document.querySelectorAll('.portfolio__item')
 
 const changeItem = (e) => {
     if (e.target.dataset.season) {
-        portfolioImage.forEach((img, i) => img.src = `/src/assets/img/${e.target.dataset.season}/${i + 1}.jpg`)
+        portfolioImage.forEach((img, i) => img.src = `./src/assets/img/${e.target.dataset.season}/${i + 1}.jpg`)
     }
 }
 portfolioBtns.addEventListener('click', changeItem)
+
+//----- Cash Images -----//
+
+const seasons = ['winter', 'spring', 'summer', 'autumn'];
+
+const preloadImages = () => {
+    for (let i = 0; i <= seasons.length - 1; i++) {
+        for (let j = 1; j <= 6; j++) {
+            const img = new Image()
+            img.src = `./src/assets/img/${seasons[i]}/${j}.jpg`
+            console.log(img.src = `./src/assets/img/${seasons[i]}/${j}.jpg`)
+        }
+    }
+}
+preloadImages()
 
