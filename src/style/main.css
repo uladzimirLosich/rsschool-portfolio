@@ -9,7 +9,7 @@
   padding-top: 10rem;
 }
 
-.video__player-btn:hover, .footer .social-item__link:hover {
+.video__player-btn:hover, .logo:hover, .footer .social-item__link:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
@@ -546,29 +546,6 @@ body {
 .portfolio__item {
   width: 45rem;
   height: 56rem;
-}
-.portfolio__item:nth-child(1) {
-  background-image: url("../assets/img/portfolio-img1.jpg");
-  background-size: cover;
-}
-.portfolio__item:nth-child(2) {
-  background-image: url("../assets/img/portfolio-img2.jpg");
-  background-size: cover;
-}
-.portfolio__item:nth-child(3) {
-  background-image: url("../assets/img/portfolio-img3.jpg");
-  background-size: cover;
-}
-.portfolio__item:nth-child(4) {
-  background-image: url("../assets/img/portfolio-img4.jpg");
-  background-size: cover;
-}
-.portfolio__item:nth-child(5) {
-  background-image: url("../assets/img/portfolio-img5.jpg");
-  background-size: cover;
-}
-.portfolio__item:nth-child(6) {
-  background-image: url("../assets/img/portfolio-img6.jpg");
   background-size: cover;
 }
 
