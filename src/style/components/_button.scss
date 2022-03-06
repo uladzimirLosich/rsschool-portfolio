@@ -28,4 +28,9 @@
       @extend %transition;
     }
   }
+
+  &.active {
+    background-color: rgba($color-tertiary-gold, 1);
+    color: rgba($color-secondary-white, 1);
+  }
 }

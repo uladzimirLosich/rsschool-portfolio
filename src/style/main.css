@@ -281,6 +281,10 @@ body {
   font-weight: bold;
 }
 
+.lang-link.active {
+  color: #bdae82;
+}
+
 .nav-list {
   display: inline-flex;
   justify-content: space-evenly;
@@ -401,6 +405,10 @@ body {
   border: 0.2rem solid #bdae82;
 }
 .btn_non-colored:hover {
+  background-color: #bdae82;
+  color: white;
+}
+.btn.active {
   background-color: #bdae82;
   color: white;
 }
