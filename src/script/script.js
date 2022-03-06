@@ -1,4 +1,4 @@
-//----- Open Menu -----//
+//---------- OPEN MENU ----------//
 
 const toggleHamburger = document.querySelector('.hamburger__menu')
 const mobileMenu = document.querySelector('.hamburger__nav')
@@ -11,12 +11,12 @@ const openMenu = () => {
 }
 toggleHamburger.addEventListener('click', openMenu)
 
-//----- Close Menu -----//
+//---------- CLOSE MENU ----------//
 
 const toggleNavLinks = document.querySelector('.hamburger__nav-list')
 
-const closeMenu = (ev) => {
-    if (ev.target.classList.contains('nav-link')) {
+const closeMenu = (e) => {
+    if (e.target.classList.contains('nav-link')) {
         toggleHamburger.classList.remove('open')
         mobileMenu.classList.remove('open')
         mobileBackground.classList.remove('open')
@@ -24,7 +24,7 @@ const closeMenu = (ev) => {
 }
 toggleNavLinks.addEventListener('click', closeMenu)
 
-//----- Change Of Seasons -----//
+//---------- CHANGE OF SEASONS ----------//
 
 const portfolioBtns = document.querySelector('.portfolio__btns')
 const portfolioImage = document.querySelectorAll('.portfolio__item')
@@ -36,7 +36,7 @@ const changeItem = (e) => {
 }
 portfolioBtns.addEventListener('click', changeItem)
 
-//----- Cash Images -----//
+//---------- IMAGE CASHING ----------//
 
 const seasons = ['winter', 'spring', 'summer', 'autumn'];
 
@@ -45,9 +45,22 @@ const preloadImages = () => {
         for (let j = 1; j <= 6; j++) {
             const img = new Image()
             img.src = `./src/assets/img/${seasons[i]}/${j}.jpg`
-            console.log(img.src = `./src/assets/img/${seasons[i]}/${j}.jpg`)
         }
     }
 }
 preloadImages()
+
+//---------- ACTIVE BUTTON ----------//
+
+const portfolioBtnsActive = document.querySelectorAll('.btn_non-colored')
+
+const changeActiveClass = (e) => {
+    if (e.target) {
+        [...portfolioBtnsActive].forEach((i) => i === e.target && i.classList.add('active'))
+    }
+    {
+        [...portfolioBtnsActive].forEach((i) => i !== e.target && i.classList.remove('active'))
+    }
+}
+portfolioBtns.addEventListener('click', changeActiveClass)
 

@@ -404,6 +404,10 @@ body {
   background-color: #bdae82;
   color: white;
 }
+.btn.active {
+  background-color: #bdae82;
+  color: white;
+}
 
 .hero {
   position: relative;
