@@ -24,18 +24,6 @@ const closeMenu = (e) => {
 }
 toggleNavLinks.addEventListener('click', closeMenu)
 
-//---------- CHANGE OF SEASONS ----------//
-
-const portfolioBtns = document.querySelector('.portfolio__btns')
-const portfolioImage = document.querySelectorAll('.portfolio__item')
-
-const changeItem = (e) => {
-    if (e.target.dataset.season) {
-        portfolioImage.forEach((img, i) => img.src = `./src/assets/img/${e.target.dataset.season}/${i + 1}.jpg`)
-    }
-}
-portfolioBtns.addEventListener('click', changeItem)
-
 //---------- IMAGE CASHING ----------//
 
 const seasons = ['winter', 'spring', 'summer', 'autumn'];
@@ -50,6 +38,18 @@ const preloadImages = () => {
 }
 preloadImages()
 
+//---------- CHANGE OF SEASONS ----------//
+
+const portfolioBtns = document.querySelector('.portfolio__btns')
+const portfolioImage = document.querySelectorAll('.portfolio__item')
+
+const changeItem = (e) => {
+    if (e.target.dataset.season) {
+        portfolioImage.forEach((img, i) => img.src = `./src/assets/img/${e.target.dataset.season}/${i + 1}.jpg`)
+    }
+}
+portfolioBtns.addEventListener('click', changeItem)
+
 //---------- ACTIVE BUTTON ----------//
 
 const portfolioBtnsActive = document.querySelectorAll('.btn_non-colored')
@@ -63,4 +63,19 @@ const changeActiveClass = (e) => {
     }
 }
 portfolioBtns.addEventListener('click', changeActiveClass)
+
+//---------- ACTIVE LANG-SWITCH ----------//
+
+const langSwitch = document.querySelector('.lang-switcher')
+const langSwitchActive = document.querySelectorAll('.lang-link')
+
+const changeActiveLink = (e) => {
+    if (e.target) {
+        [...langSwitchActive].forEach((i) => i === e.target && i.classList.add('active'))
+    }
+    {
+        [...langSwitchActive].forEach((i) => i !== e.target && i.classList.remove('active'))
+    }
+}
+langSwitch.addEventListener('click', changeActiveLink)
 

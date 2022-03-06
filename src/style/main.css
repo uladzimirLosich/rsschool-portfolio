@@ -281,6 +281,10 @@ body {
   font-weight: bold;
 }
 
+.lang-link.active {
+  color: #bdae82;
+}
+
 .nav-list {
   display: inline-flex;
   justify-content: space-evenly;
