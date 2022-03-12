@@ -10,6 +10,15 @@
 .section-skills {
   background-color: rgba($color-primary-black, 1);
   color: rgba($color-secondary-white, 1);
+
+  &.light-theme {
+    background-color: rgba($color-secondary-white, 1);
+    color: rgba($color-primary-black, 1);
+
+    &:hover {
+      color: $color-primary-black;
+    }
+  }
 }
 
 /*---------- PORTFOLIO ----------*/
@@ -17,6 +26,15 @@
 .section-portfolio {
   background-color: rgba($color-primary-black, 1);
   color: rgba($color-secondary-white, 1);
+
+  &.light-theme {
+    background-color: rgba($color-secondary-white, 1);
+    color: rgba($color-primary-black, 1);
+
+    &:hover {
+      color: $color-primary-black;
+    }
+  }
 }
 
 /*---------- VIDEO ----------*/
@@ -24,6 +42,15 @@
 .section-video {
   background-color: rgba($color-primary-black, 1);
   color: rgba($color-secondary-white, 1);
+
+  &.light-theme {
+    background-color: rgba($color-secondary-white, 1);
+    color: rgba($color-primary-black, 1);
+
+    &:hover {
+      color: $color-primary-black;
+    }
+  }
 }
 
 /*---------- PRICE ----------*/
@@ -31,6 +58,15 @@
 .section-price {
   background-color: rgba($color-primary-black, 1);
   color: rgba($color-secondary-white, 1);
+
+  &.light-theme {
+    background-color: rgba($color-secondary-white, 1);
+    color: rgba($color-primary-black, 1);
+
+    &:hover {
+      color: $color-primary-black;
+    }
+  }
 }
 
 /*---------- CONTACTS ----------*/

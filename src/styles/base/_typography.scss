@@ -10,10 +10,27 @@
           rgba($color-tertiary-gold, 1) 51%,
           rgba($color-primary-black, 1) 51%);
 
+  &.light-theme {
+    background-image: linear-gradient(to top,
+            rgba($color-secondary-white, 1) 49%,
+            rgba($color-primary-black, 1) 49%,
+            rgba($color-primary-black, 1) 51%,
+            rgba($color-secondary-white, 1) 51%);
+  }
+
   &__title {
     padding: 0 2rem;
     font: bold 4rem/2 'Merriweather', sans-serif;
     background-color: rgba($color-primary-black, 1);
     color: rgba($color-tertiary-gold, 1);
+
+    &.light-theme {
+      background-color: rgba($color-secondary-white, 1);
+      color: rgba($color-primary-black, 1);
+
+      &:hover {
+        color: $color-primary-black;
+      }
+    }
   }
 }

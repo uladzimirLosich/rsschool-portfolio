@@ -1,30 +1,26 @@
-import i18Obj from "./modules/translate.js";
+// import i18Obj from "./modules/translate.js";
 
-//---------- OPEN MENU ----------//
+//---------- MENU ----------//
 
-const toggleHamburger = document.querySelector('.hamburger__menu')
+const openMenu = document.querySelector('.hamburger__menu')
 const mobileMenu = document.querySelector('.hamburger__nav')
 const mobileBackground = document.querySelector('.hamburger__background')
 
-const openMenu = () => {
-    toggleHamburger.classList.toggle('open')
+openMenu.addEventListener('click', () => {
+    openMenu.classList.toggle('open')
     mobileMenu.classList.toggle('open')
     mobileBackground.classList.toggle('open')
-}
-toggleHamburger.addEventListener('click', openMenu)
+})
 
-//---------- CLOSE MENU ----------//
+const closeMenu = document.querySelector('.hamburger__nav-list')
 
-const toggleNavLinks = document.querySelector('.hamburger__nav-list')
-
-const closeMenu = (e) => {
+closeMenu.addEventListener('click', (e) => {
     if (e.target.classList.contains('nav-link')) {
-        toggleHamburger.classList.remove('open')
+        openMenu.classList.remove('open')
         mobileMenu.classList.remove('open')
         mobileBackground.classList.remove('open')
     }
-}
-toggleNavLinks.addEventListener('click', closeMenu)
+})
 
 //---------- IMAGE CASHING ----------//
 
@@ -44,17 +40,14 @@ preloadImages()
 
 const portfolioBtns = document.querySelector('.portfolio__btns')
 
-const changeItem = (e) => {
+portfolioBtns.addEventListener('click', (e) => {
     const portfolioImage = document.querySelectorAll('.portfolio__item')
     if (e.target.dataset.season) {
         [...portfolioImage].forEach((img, i) => img.src = `./src/assets/img/${e.target.dataset.season}/${i + 1}.jpg`)
     }
-}
-portfolioBtns.addEventListener('click', changeItem)
+})
 
-//---------- ACTIVE BUTTON ----------//
-
-const changeActiveClass = (e) => {
+portfolioBtns.addEventListener('click', (e) => {
     const portfolioBtnsActive = document.querySelectorAll('.btn_non-colored')
     if (e.target) {
         [...portfolioBtnsActive].forEach((i) => {
@@ -62,14 +55,13 @@ const changeActiveClass = (e) => {
             i !== e.target && i.classList.remove('active')
         })
     }
-}
-portfolioBtns.addEventListener('click', changeActiveClass)
+})
 
 //---------- ACTIVE LANG-SWITCH ----------//
 
 const langSwitch = document.querySelector('.lang-switcher')
 
-const changeActiveLink = (e) => {
+langSwitch.addEventListener('click', (e) => {
     const langSwitchActive = document.querySelectorAll('.lang-link')
     if (e.target) {
         [...langSwitchActive].forEach((i) => {
@@ -77,21 +69,32 @@ const changeActiveLink = (e) => {
             i !== e.target && i.classList.remove('active')
         })
     }
-}
-langSwitch.addEventListener('click', changeActiveLink)
+})
 
-//---------- SWITCH LANGUAGES ----------//
+// //---------- SWITCH LANGUAGES ----------//
+//
+// const getTranslate = document.querySelector('.lang-ru')
+//
+// getTranslate.addEventListener('click', (ru) => {
+//     const changeLang = document.querySelectorAll('[data-i18n]')
+//         changeLang.forEach((e) => {
+//             if (e.dataset.i18n === i18Obj.ru.video) {
+//                 e.textContent = e.dataset.i18n
+//                 console.log(e.textContent)
+//             }
+//         })
+// })
 
-const switchLang = document.querySelector('.lang-link')
+const theme = document.querySelector('.theme-toggle')
+const themes = document.querySelectorAll('.section-skills, .section-portfolio, .section-video, .section-price, .price__item, .section-heading, .section-heading__title, .btn_non-colored')
 
-const getTranslate = (ru) => {
-    const changeLang = document.querySelectorAll('[data-i18n]')
-    changeLang.forEach((current) => {
-        if (current.dataset.i18n === i18Obj['ru'][''] && current.placeholder) {
-            current.placeholder = i18Obj['ru']
-            current.textContent = ''
-        }
+theme.addEventListener('click', () => {
+    theme.classList.toggle('toggle')
+    themes.forEach((e) => {
+        e.classList.toggle('light-theme')
     })
-}
-switchLang.addEventListener('click', getTranslate)
+})
+
+
+
 

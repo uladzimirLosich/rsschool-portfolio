@@ -9,6 +9,15 @@
     color: rgba($color-secondary-white, 1);
     border: 0.3rem solid rgba($color-tertiary-gold, 1);
 
+    &.light-theme {
+      background-color: rgba($color-secondary-white, 1);
+      color: rgba($color-primary-black, 1);
+
+      &:hover {
+        color: $color-primary-black;
+      }
+    }
+
     & h4 {
       padding-bottom: 3.2rem;
     }
