@@ -52,3 +52,10 @@
     }
   }
 }
+
+.section-heading__contacts {
+  padding: 0 2rem;
+  font: bold 4rem/2 'Merriweather', sans-serif;
+  background-color: rgba($color-primary-black, 1);
+  color: rgba($color-tertiary-gold, 1);
+}

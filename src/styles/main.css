@@ -724,4 +724,11 @@ body {
   background: transparent;
 }
 
+.section-heading__contacts {
+  padding: 0 2rem;
+  font: bold 4rem/2 "Merriweather", sans-serif;
+  background-color: black;
+  color: #bdae82;
+}
+
 /*# sourceMappingURL=main.css.map */
