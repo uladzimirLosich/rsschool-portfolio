@@ -6,21 +6,21 @@ const openMenu = document.querySelector('.hamburger__menu')
 const mobileMenu = document.querySelector('.hamburger__nav')
 const mobileBackground = document.querySelector('.hamburger__background')
 
-openMenu.addEventListener('click', () => {
+openMenu.onclick = () => {
     openMenu.classList.toggle('open')
     mobileMenu.classList.toggle('open')
     mobileBackground.classList.toggle('open')
-})
+}
 
 const closeMenu = document.querySelector('.hamburger__nav-list')
 
-closeMenu.addEventListener('click', (e) => {
+closeMenu.onclick = (e) => {
     if (e.target.classList.contains('nav-link')) {
         openMenu.classList.remove('open')
         mobileMenu.classList.remove('open')
         mobileBackground.classList.remove('open')
     }
-})
+}
 
 //---------- IMAGE CASHING ----------//
 
@@ -40,14 +40,11 @@ preloadImages()
 
 const portfolioBtns = document.querySelector('.portfolio__btns')
 
-portfolioBtns.addEventListener('click', (e) => {
+portfolioBtns.onclick = (e) => {
     const portfolioImage = document.querySelectorAll('.portfolio__item')
     if (e.target.dataset.season) {
         [...portfolioImage].forEach((img, i) => img.src = `./src/assets/img/${e.target.dataset.season}/${i + 1}.jpg`)
     }
-})
-
-portfolioBtns.addEventListener('click', (e) => {
     const portfolioBtnsActive = document.querySelectorAll('.btn_non-colored')
     if (e.target) {
         [...portfolioBtnsActive].forEach((i) => {
@@ -55,13 +52,13 @@ portfolioBtns.addEventListener('click', (e) => {
             i !== e.target && i.classList.remove('active')
         })
     }
-})
+}
 
 //---------- ACTIVE LANG-SWITCH ----------//
 
 const langSwitch = document.querySelector('.lang-switcher')
 
-langSwitch.addEventListener('click', (e) => {
+langSwitch.onclick = (e) => {
     const langSwitchActive = document.querySelectorAll('.lang-link')
     if (e.target) {
         [...langSwitchActive].forEach((i) => {
@@ -69,7 +66,7 @@ langSwitch.addEventListener('click', (e) => {
             i !== e.target && i.classList.remove('active')
         })
     }
-})
+}
 
 // //---------- SWITCH LANGUAGES ----------//
 //
@@ -88,12 +85,12 @@ langSwitch.addEventListener('click', (e) => {
 const theme = document.querySelector('.theme-toggle')
 const themes = document.querySelectorAll('.section-skills, .section-portfolio, .section-video, .section-price, .price__item, .section-heading, .section-heading__title, .btn_non-colored')
 
-theme.addEventListener('click', () => {
+theme.onclick = () => {
     theme.classList.toggle('toggle')
     themes.forEach((e) => {
         e.classList.toggle('light-theme')
     })
-})
+}
 
 
 
