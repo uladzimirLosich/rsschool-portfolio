@@ -5,7 +5,8 @@
   font-weight: bold;
 }
 
-.lang-link {
+.lang-link,
+.lang-ru {
 
   &.active {
     color: rgba($color-tertiary-gold, 1);
