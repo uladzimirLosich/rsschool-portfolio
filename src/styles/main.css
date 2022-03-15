@@ -334,10 +334,10 @@ body {
   min-width: 3rem;
   min-height: 3rem;
   margin: 0 0 0 2.8rem;
-  background: url("../assets/img/theme-buttons/black.svg") no-repeat center/contain;
-}
-.theme-toggle.toggle {
   background: url("../assets/img/theme-buttons/white.svg") no-repeat center/contain;
+}
+.theme-toggle.light {
+  background: url("../assets/img/theme-buttons/black.svg") no-repeat center/contain;
 }
 @media screen and (max-width: 48em) {
   .theme-toggle {
@@ -714,6 +714,12 @@ body {
   margin-bottom: 2.3rem;
   resize: none;
 }
+.contacts__box input::-moz-placeholder, .contacts__box textarea::-moz-placeholder {
+  color: #bdae82;
+}
+.contacts__box input:-ms-input-placeholder, .contacts__box textarea:-ms-input-placeholder {
+  color: #bdae82;
+}
 .contacts__box input::placeholder,
 .contacts__box textarea::placeholder {
   color: #bdae82;
@@ -729,6 +735,4 @@ body {
   font: bold 4rem/2 "Merriweather", sans-serif;
   background-color: black;
   color: #bdae82;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
