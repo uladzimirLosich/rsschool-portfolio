@@ -1,4 +1,4 @@
-.video__player-btn, .btn_non-colored:hover, .btn_colored:hover, .hamburger__nav, .hamburger__menu span, .hamburger__menu span:before, .hamburger__menu span:after, .hamburger__background, .theme-toggle, .footer .social-item__link {
+.video__player-btn, .btn_non-colored:hover, .btn_colored:hover, .hamburger__nav, .hamburger__menu span, .hamburger__menu span:before, .hamburger__menu span:after, .hamburger__background, .footer .social-item__link {
   transition: all 0.5s ease-out;
 }
 
@@ -9,7 +9,7 @@
   padding-top: 10rem;
 }
 
-.video__player-btn:hover, .theme-toggle:hover, .logo:hover, .footer .social-item__link:hover {
+.video__player-btn:hover, .theme-icon:hover, .logo:hover, .footer .social-item__link:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
@@ -69,7 +69,7 @@ body {
   margin-bottom: 6rem;
   background-image: linear-gradient(to top, black 49%, #bdae82 49%, #bdae82 51%, black 51%);
 }
-.section-heading.light-theme {
+.section-heading.light {
   background-image: linear-gradient(to top, white 49%, black 49%, black 51%, white 51%);
 }
 .section-heading__title {
@@ -78,11 +78,11 @@ body {
   background-color: black;
   color: #bdae82;
 }
-.section-heading__title.light-theme {
+.section-heading__title.light {
   background-color: white;
   color: black;
 }
-.section-heading__title.light-theme:hover {
+.section-heading__title.light:hover {
   color: #000000;
 }
 
@@ -253,11 +253,11 @@ body {
   background-color: black;
   color: white;
 }
-.section-skills.light-theme {
+.section-skills.light {
   background-color: white;
   color: black;
 }
-.section-skills.light-theme:hover {
+.section-skills.light:hover {
   color: #000000;
 }
 
@@ -266,11 +266,11 @@ body {
   background-color: black;
   color: white;
 }
-.section-portfolio.light-theme {
+.section-portfolio.light {
   background-color: white;
   color: black;
 }
-.section-portfolio.light-theme:hover {
+.section-portfolio.light:hover {
   color: #000000;
 }
 
@@ -279,11 +279,11 @@ body {
   background-color: black;
   color: white;
 }
-.section-video.light-theme {
+.section-video.light {
   background-color: white;
   color: black;
 }
-.section-video.light-theme:hover {
+.section-video.light:hover {
   color: #000000;
 }
 
@@ -292,11 +292,11 @@ body {
   background-color: black;
   color: white;
 }
-.section-price.light-theme {
+.section-price.light {
   background-color: white;
   color: black;
 }
-.section-price.light-theme:hover {
+.section-price.light:hover {
   color: #000000;
 }
 
@@ -330,17 +330,17 @@ body {
   width: 100%;
 }
 
-.theme-toggle {
+.theme-icon {
   min-width: 3rem;
   min-height: 3rem;
   margin: 0 0 0 2.8rem;
   background: url("../assets/img/theme-buttons/white.svg") no-repeat center/contain;
 }
-.theme-toggle.light {
+.theme-icon.theme-toggle {
   background: url("../assets/img/theme-buttons/black.svg") no-repeat center/contain;
 }
 @media screen and (max-width: 48em) {
-  .theme-toggle {
+  .theme-icon {
     margin: 0 8rem 0 0;
   }
 }
@@ -458,11 +458,11 @@ body {
   color: #bdae82;
   border: 0.2rem solid #bdae82;
 }
-.btn_non-colored.light-theme {
+.btn_non-colored.light {
   background-color: white;
   color: black;
 }
-.btn_non-colored.light-theme:hover {
+.btn_non-colored.light:hover {
   color: #000000;
 }
 .btn_non-colored:hover {
@@ -651,11 +651,11 @@ body {
   color: white;
   border: 0.3rem solid #bdae82;
 }
-.price__item.light-theme {
+.price__item.light {
   background-color: white;
   color: black;
 }
-.price__item.light-theme:hover {
+.price__item.light:hover {
   color: #000000;
 }
 .price__item h4 {
@@ -714,12 +714,6 @@ body {
   margin-bottom: 2.3rem;
   resize: none;
 }
-.contacts__box input::-moz-placeholder, .contacts__box textarea::-moz-placeholder {
-  color: #bdae82;
-}
-.contacts__box input:-ms-input-placeholder, .contacts__box textarea:-ms-input-placeholder {
-  color: #bdae82;
-}
 .contacts__box input::placeholder,
 .contacts__box textarea::placeholder {
   color: #bdae82;
@@ -735,4 +729,6 @@ body {
   font: bold 4rem/2 "Merriweather", sans-serif;
   background-color: black;
   color: #bdae82;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,14 +1,12 @@
-.theme-toggle {
+.theme-icon {
   min-width: 3rem;
   min-height: 3rem;
   margin: 0 0 0 2.8rem;
   background: url("../assets/img/theme-buttons/white.svg") no-repeat center/contain;
 
-  @extend %transition;
-
   @extend %hoverSvgIcon;
 
-  &.light {
+  &.theme-toggle {
     background: url("../assets/img/theme-buttons/black.svg") no-repeat center/contain;
   }
 

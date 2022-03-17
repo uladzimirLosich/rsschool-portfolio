@@ -10,7 +10,7 @@
           rgba($color-tertiary-gold, 1) 51%,
           rgba($color-primary-black, 1) 51%);
 
-  &.light-theme {
+  &.light {
     background-image: linear-gradient(to top,
             rgba($color-secondary-white, 1) 49%,
             rgba($color-primary-black, 1) 49%,
@@ -24,7 +24,7 @@
     background-color: rgba($color-primary-black, 1);
     color: rgba($color-tertiary-gold, 1);
 
-    &.light-theme {
+    &.light {
       background-color: rgba($color-secondary-white, 1);
       color: rgba($color-primary-black, 1);
 
