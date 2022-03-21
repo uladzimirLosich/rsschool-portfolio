@@ -4,18 +4,22 @@
   align-items: center;
   width: 50%;
   margin-bottom: 6rem;
-  background-image: linear-gradient(to top,
-          rgba($color-primary-black, 1) 49%,
-          rgba($color-tertiary-gold, 1) 49%,
-          rgba($color-tertiary-gold, 1) 51%,
-          rgba($color-primary-black, 1) 51%);
+  background-image: linear-gradient(
+    to top,
+    rgba($color-primary-black, 1) 49%,
+    rgba($color-tertiary-gold, 1) 49%,
+    rgba($color-tertiary-gold, 1) 51%,
+    rgba($color-primary-black, 1) 51%
+  );
 
   &.light {
-    background-image: linear-gradient(to top,
-            rgba($color-secondary-white, 1) 49%,
-            rgba($color-primary-black, 1) 49%,
-            rgba($color-primary-black, 1) 51%,
-            rgba($color-secondary-white, 1) 51%);
+    background-image: linear-gradient(
+      to top,
+      rgba($color-secondary-white, 1) 49%,
+      rgba($color-primary-black, 1) 49%,
+      rgba($color-primary-black, 1) 51%,
+      rgba($color-secondary-white, 1) 51%
+    );
   }
 
   &__title {

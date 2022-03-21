@@ -31,7 +31,8 @@ a:hover {
   box-sizing: inherit;
 }
 
-ul[class], ol[class] {
+ul[class],
+ol[class] {
   list-style: none;
 }
 
@@ -177,16 +178,16 @@ body {
   background: no-repeat center/contain;
 }
 .footer .social-item__link:nth-child(1) {
-  background-image: url("../assets/img/Vectorinst.svg");
+  background-image: url("../assets/img/inst.svg");
 }
 .footer .social-item__link:nth-child(2) {
-  background-image: url("../assets/img/Vectorfb.svg");
+  background-image: url("../assets/img/facebook.svg");
 }
 .footer .social-item__link:nth-child(3) {
-  background-image: url("../assets/img/Vectortwitter.svg");
+  background-image: url("../assets/img/twitter.svg");
 }
 .footer .social-item__link:nth-child(4) {
-  background-image: url("../assets/img/Vectorpinterest.svg");
+  background-image: url("../assets/img/pinterest.svg");
 }
 
 .content-wrapper {
@@ -714,6 +715,12 @@ body {
   margin-bottom: 2.3rem;
   resize: none;
 }
+.contacts__box input::-moz-placeholder, .contacts__box textarea::-moz-placeholder {
+  color: #bdae82;
+}
+.contacts__box input:-ms-input-placeholder, .contacts__box textarea:-ms-input-placeholder {
+  color: #bdae82;
+}
 .contacts__box input::placeholder,
 .contacts__box textarea::placeholder {
   color: #bdae82;
@@ -729,6 +736,4 @@ body {
   font: bold 4rem/2 "Merriweather", sans-serif;
   background-color: black;
   color: #bdae82;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -1,27 +1,27 @@
 @mixin responseMode($breakpoint) {
   @if $breakpoint == mobile-s {
     @media screen and (max-width: 20em) {
-      @content
-    };
+      @content;
+    }
   }
   @if $breakpoint == mobile-l {
     @media screen and (max-width: 26.5625em) {
-      @content
-    };
+      @content;
+    }
   }
   @if $breakpoint == tablet {
     @media screen and (max-width: 48em) {
-      @content
-    };
+      @content;
+    }
   }
   @if $breakpoint == tablet-land {
     @media screen and (max-width: 64em) {
-      @content
-    };
+      @content;
+    }
   }
   @if $breakpoint == desktop {
     @media screen and (max-width: 90em) {
-      @content
-    };
+      @content;
+    }
   }
 }

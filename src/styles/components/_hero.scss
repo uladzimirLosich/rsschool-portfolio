@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   height: 82rem;
-  background: url("../assets/img/background-hero.jpg") no-repeat center -9rem;
+  background: url('../assets/img/background-hero.jpg') no-repeat center -9rem;
 
   @include responseMode(tablet) {
     width: 100%;

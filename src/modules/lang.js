@@ -1,17 +1,18 @@
 // import i18Obj from "./modules/translate.js";
 
 const langSwitch = () => {
-    document.querySelector('.lang-switcher').addEventListener('click', (event) => {
-            const langSwitchActive = document.querySelectorAll('.lang-link')
-            if (event.target) {
-                [...langSwitchActive].forEach((i) => {
-                    i === event.target && i.classList.add('active')
-                    i !== event.target && i.classList.remove('active')
-                })
-            }
-        }
-    )
-}
+  document
+    .querySelector('.lang-switcher')
+    .addEventListener('click', (event) => {
+      const langSwitchActive = document.querySelectorAll('.lang-link');
+      if (event.target) {
+        [...langSwitchActive].forEach((i) => {
+          i === event.target && i.classList.add('active');
+          i !== event.target && i.classList.remove('active');
+        });
+      }
+    });
+};
 
 // //---------- SWITCH LANGUAGES ----------//
 //

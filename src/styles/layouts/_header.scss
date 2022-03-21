@@ -8,7 +8,7 @@
     align-items: center;
     width: 100%;
     min-height: 9rem;
-    background: url("../assets/img/background-hero.jpg") no-repeat top;
+    background: url('../assets/img/background-hero.jpg') no-repeat top;
 
     @include responseMode(tablet) {
       position: absolute;
