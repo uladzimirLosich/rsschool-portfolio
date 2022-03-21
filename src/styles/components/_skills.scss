@@ -1,5 +1,4 @@
 .skills {
-
   @extend %sectionLayout;
 
   &__item {
@@ -11,7 +10,7 @@
     background: no-repeat center top;
     text-align: center;
 
-    @include responseMode (tablet) {
+    @include responseMode(tablet) {
       justify-content: center;
       gap: 2rem;
       padding: 10rem 0 0;
@@ -21,19 +20,19 @@
     }
 
     &:nth-child(1) {
-      background-image: url("../assets/img/camera 1.svg");
+      background-image: url('../assets/img/camera 1.svg');
     }
 
     &:nth-child(2) {
-      background-image: url("../assets/img/video 1.svg");
+      background-image: url('../assets/img/video 1.svg');
     }
 
     &:nth-child(3) {
-      background-image: url("../assets/img/image 1.svg");
+      background-image: url('../assets/img/image 1.svg');
     }
 
     &:nth-child(4) {
-      background-image: url("../assets/img/mic 1.svg");
+      background-image: url('../assets/img/mic 1.svg');
 
       @include responseMode(mobile-l) {
         background-size: 13%;

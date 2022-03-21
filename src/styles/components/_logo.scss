@@ -1,7 +1,7 @@
 .logo {
   min-width: 5rem;
   min-height: 5rem;
-  background: url("../assets/img/vector-logo.svg") no-repeat center/contain;
+  background: url('../assets/img/vector-logo.svg') no-repeat center/contain;
 
   @extend %hoverSvgIcon;
 }

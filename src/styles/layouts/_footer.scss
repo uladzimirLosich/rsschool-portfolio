@@ -44,21 +44,20 @@
       @extend %hoverSvgIcon;
 
       &:nth-child(1) {
-        background-image: url("../assets/img/Vectorinst.svg");
+        background-image: url('../assets/img/inst.svg');
       }
 
       &:nth-child(2) {
-        background-image: url("../assets/img/Vectorfb.svg");
+        background-image: url('../assets/img/facebook.svg');
       }
 
       &:nth-child(3) {
-        background-image: url("../assets/img/Vectortwitter.svg");
+        background-image: url('../assets/img/twitter.svg');
       }
 
       &:nth-child(4) {
-        background-image: url("../assets/img/Vectorpinterest.svg");
+        background-image: url('../assets/img/pinterest.svg');
       }
     }
   }
 }
-

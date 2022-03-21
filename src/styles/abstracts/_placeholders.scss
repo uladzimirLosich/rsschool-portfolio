@@ -11,25 +11,16 @@
 
 %hoverSvgIcon {
   &:hover {
-    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%)
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+      brightness(92%) contrast(87%);
   }
 }
 
-//%changeTheme {
-//  .light-theme {
-//    background-color: $color-secondary-white;
-//    color: $color-primary-black;
-//
-//    &:hover {
-//      color: $color-primary-black;
-//    }
-//  }
-//}
-
 /* ----- active link ----- */
+
 a {
   color: rgba($color-secondary-white, 1);
-  transition: .5s;
+  transition: 0.5s;
 
   &:hover {
     color: rgba($color-tertiary-gold, 1);
