@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import toggleMenu from './modules/menu.js';
 import preloadImages from './modules/preload.js';
 import portfolioChangeItems from './modules/portfolio.js';
@@ -12,15 +13,15 @@ window.onload = () => {
   themeToggle();
 };
 
-let theme = 'light';
+const theme = 'light';
 
 window.addEventListener('beforeunload', () => {
   localStorage.setItem('theme', theme);
 });
 
-// window.addEventListener('load', () => {
-//     if (localStorage.getItem('theme')) {
-//         const themeMode = localStorage.getItem('theme')
-//         themeToggle(themeMode)
-//     }
-// })
+/* window.addEventListener('load', () => {
+  if (localStorage.getItem('theme')) {
+    const themeMode = localStorage.getItem('theme');
+    themeToggle(themeMode);
+  }
+}); */
