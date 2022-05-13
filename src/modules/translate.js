@@ -16,8 +16,7 @@ const i18Obj = {
     'skill-title-3': 'Retouch',
     'skill-text-3': 'I strive to make photography surpass reality',
     'skill-title-4': 'Audio',
-    'skill-text-4':
-      'Professional sounds recording for video, advertising, portfolio',
+    'skill-text-4': 'Professional sounds recording for video, advertising, portfolio',
     winter: 'Winter',
     spring: 'Spring',
     summer: 'Summer',
@@ -54,14 +53,11 @@ const i18Obj = {
     'skill-title-1': 'Фотография',
     'skill-text-1': 'Высококачественные фото в студии и на природе',
     'skill-title-2': 'Видеосъемка',
-    'skill-text-2':
-      'Запечатлите лучшие моменты, чтобы они всегда оставались с вами',
+    'skill-text-2': 'Запечатлите лучшие моменты, чтобы они всегда оставались с вами',
     'skill-title-3': 'Ретушь',
-    'skill-text-3':
-      'Я стремлюсь к тому, чтобы фотография превосходила реальность',
+    'skill-text-3': 'Я стремлюсь к тому, чтобы фотография превосходила реальность',
     'skill-title-4': 'Звук',
-    'skill-text-4':
-      'Профессиональная запись звука для видео, рекламы, портфолио',
+    'skill-text-4': 'Профессиональная запись звука для видео, рекламы, портфолио',
     winter: 'Зима',
     spring: 'Весна',
     summer: 'Лето',
@@ -85,5 +81,5 @@ const i18Obj = {
     'contact-me': 'Свяжитесь со мной',
     'send-message': 'Отправить',
   },
-};
-export default i18Obj;
+}
+export default i18Obj

@@ -1,15 +1,29 @@
-.video__player-btn, .btn_non-colored:hover, .btn_colored:hover, .hamburger__nav, .hamburger__menu span, .hamburger__menu span:before, .hamburger__menu span:after, .hamburger__background, .footer .social-item__link {
+.video__player-btn,
+.btn_non-colored:hover,
+.btn_colored:hover,
+.hamburger__nav,
+.hamburger__menu span,
+.hamburger__menu span:before,
+.hamburger__menu span:after,
+.hamburger__background,
+.footer .social-item__link {
   transition: all 0.5s ease-out;
 }
 
-.price, .video, .portfolio, .skills {
+.price,
+.video,
+.portfolio,
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10rem;
 }
 
-.video__player-btn:hover, .theme-icon:hover, .logo:hover, .footer .social-item__link:hover {
+.video__player-btn:hover,
+.theme-icon:hover,
+.logo:hover,
+.footer .social-item__link:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
@@ -75,7 +89,7 @@ body {
 }
 .section-heading__title {
   padding: 0 2rem;
-  font: bold 4rem/2 "Merriweather", sans-serif;
+  font: bold 4rem/2 'Merriweather', sans-serif;
   background-color: black;
   color: #bdae82;
 }
@@ -88,7 +102,7 @@ body {
 }
 
 .header {
-  font: 2rem/1.5 "Inter", sans-serif;
+  font: 2rem/1.5 'Inter', sans-serif;
   background-color: black;
   color: white;
 }
@@ -97,7 +111,7 @@ body {
   align-items: center;
   width: 100%;
   min-height: 9rem;
-  background: url("../assets/img/background-hero.jpg") no-repeat top;
+  background: url('../assets/img/background-hero.jpg') no-repeat top;
 }
 @media screen and (max-width: 48em) {
   .header__content {
@@ -139,7 +153,7 @@ body {
 }
 
 .footer {
-  font: 2rem/1.5 "Inter", sans-serif;
+  font: 2rem/1.5 'Inter', sans-serif;
   background-color: black;
   color: white;
 }
@@ -178,16 +192,16 @@ body {
   background: no-repeat center/contain;
 }
 .footer .social-item__link:nth-child(1) {
-  background-image: url("../assets/img/inst.svg");
+  background-image: url('../assets/img/inst.svg');
 }
 .footer .social-item__link:nth-child(2) {
-  background-image: url("../assets/img/facebook.svg");
+  background-image: url('../assets/img/facebook.svg');
 }
 .footer .social-item__link:nth-child(3) {
-  background-image: url("../assets/img/twitter.svg");
+  background-image: url('../assets/img/twitter.svg');
 }
 .footer .social-item__link:nth-child(4) {
-  background-image: url("../assets/img/pinterest.svg");
+  background-image: url('../assets/img/pinterest.svg');
 }
 
 .content-wrapper {
@@ -310,7 +324,7 @@ body {
 .logo {
   min-width: 5rem;
   min-height: 5rem;
-  background: url("../assets/img/vector-logo.svg") no-repeat center/contain;
+  background: url('../assets/img/vector-logo.svg') no-repeat center/contain;
 }
 
 .lang-switcher {
@@ -335,10 +349,10 @@ body {
   min-width: 3rem;
   min-height: 3rem;
   margin: 0 0 0 2.8rem;
-  background: url("../assets/img/theme-buttons/white.svg") no-repeat center/contain;
+  background: url('../assets/img/theme-buttons/white.svg') no-repeat center/contain;
 }
 .theme-icon.theme-toggle {
-  background: url("../assets/img/theme-buttons/black.svg") no-repeat center/contain;
+  background: url('../assets/img/theme-buttons/black.svg') no-repeat center/contain;
 }
 @media screen and (max-width: 48em) {
   .theme-icon {
@@ -380,7 +394,9 @@ body {
 .hamburger__menu span {
   position: relative;
 }
-.hamburger__menu span, .hamburger__menu span:before, .hamburger__menu span:after {
+.hamburger__menu span,
+.hamburger__menu span:before,
+.hamburger__menu span:after {
   position: absolute;
   display: inline-block;
   width: 100%;
@@ -391,11 +407,11 @@ body {
   left: 0;
 }
 .hamburger__menu span:before {
-  content: "";
+  content: '';
   top: -1rem;
 }
 .hamburger__menu span:after {
-  content: "";
+  content: '';
   top: 1rem;
 }
 .hamburger__menu.open > span:before {
@@ -434,7 +450,7 @@ body {
 }
 .hamburger__nav-list {
   padding: 13.4rem 0 0 12.7rem;
-  font: 3.5rem/2 "Inter", sans-serif;
+  font: 3.5rem/2 'Inter', sans-serif;
 }
 .hamburger__nav-list li:not(:last-child) {
   padding-bottom: 1.6rem;
@@ -443,7 +459,7 @@ body {
 .btn {
   width: 22rem;
   min-height: 5.5rem;
-  font: 2rem/2 "Inter", sans-serif;
+  font: 2rem/2 'Inter', sans-serif;
   cursor: pointer;
 }
 .btn_colored {
@@ -478,7 +494,7 @@ body {
 .hero {
   position: relative;
   height: 82rem;
-  background: url("../assets/img/background-hero.jpg") no-repeat center -9rem;
+  background: url('../assets/img/background-hero.jpg') no-repeat center -9rem;
 }
 @media screen and (max-width: 48em) {
   .hero {
@@ -502,7 +518,7 @@ body {
 .hero__heading-title {
   display: block;
   padding-bottom: 1rem;
-  font: bold 6rem/2 "Merriweather", sans-serif;
+  font: bold 6rem/2 'Merriweather', sans-serif;
 }
 @media screen and (max-width: 48em) {
   .hero__heading-title {
@@ -514,7 +530,7 @@ body {
   display: block;
   max-width: 47rem;
   padding-bottom: 2.5rem;
-  font: 2rem/2 "Inter", sans-serif;
+  font: 2rem/2 'Inter', sans-serif;
 }
 @media screen and (max-width: 48em) {
   .hero__heading-subtitle {
@@ -546,16 +562,16 @@ body {
   }
 }
 .skills__item:nth-child(1) {
-  background-image: url("../assets/img/camera 1.svg");
+  background-image: url('../assets/img/camera 1.svg');
 }
 .skills__item:nth-child(2) {
-  background-image: url("../assets/img/video 1.svg");
+  background-image: url('../assets/img/video 1.svg');
 }
 .skills__item:nth-child(3) {
-  background-image: url("../assets/img/image 1.svg");
+  background-image: url('../assets/img/image 1.svg');
 }
 .skills__item:nth-child(4) {
-  background-image: url("../assets/img/mic 1.svg");
+  background-image: url('../assets/img/mic 1.svg');
 }
 @media screen and (max-width: 26.5625em) {
   .skills__item:nth-child(4) {
@@ -563,11 +579,11 @@ body {
   }
 }
 .skills__item h3 {
-  font: bold 2rem/2 "Inter", sans-serif;
+  font: bold 2rem/2 'Inter', sans-serif;
 }
 .skills__item p {
   width: 28rem;
-  font: 1.8rem/2 "Inter", sans-serif;
+  font: 1.8rem/2 'Inter', sans-serif;
 }
 @media screen and (max-width: 48em) {
   .skills__item p {
@@ -625,7 +641,7 @@ body {
   align-items: center;
   width: 100%;
   height: 70.5rem;
-  background: url("../assets/img/video-player.jpg") no-repeat center/contain;
+  background: url('../assets/img/video-player.jpg') no-repeat center/contain;
 }
 @media screen and (max-width: 48em) {
   .video__player {
@@ -636,7 +652,7 @@ body {
 .video__player-btn {
   width: 13rem;
   height: 13rem;
-  background: url("../assets/img/Play_hover.svg") no-repeat center/cover;
+  background: url('../assets/img/Play_hover.svg') no-repeat center/cover;
 }
 @media screen and (max-width: 48em) {
   .video__player-btn {
@@ -648,7 +664,7 @@ body {
 .price__item {
   flex: 0 1 33.33%;
   padding: 4.1rem 0;
-  font: bold 2.8rem/2 "Merriweather", sans-serif;
+  font: bold 2.8rem/2 'Merriweather', sans-serif;
   color: white;
   border: 0.3rem solid #bdae82;
 }
@@ -664,12 +680,12 @@ body {
 }
 .price__item p {
   padding-bottom: 2rem;
-  font: bold 2.4rem/2 "Merriweather", sans-serif;
+  font: bold 2.4rem/2 'Merriweather', sans-serif;
   color: #bdae82;
 }
 .price__text {
   padding-bottom: 3.5rem;
-  font: 1.8rem/2 "Inter", sans-serif;
+  font: 1.8rem/2 'Inter', sans-serif;
 }
 .price__text span {
   display: block;
@@ -681,7 +697,7 @@ body {
   align-items: flex-end;
   height: 70rem;
   padding: 6rem 2rem 0 0;
-  background-image: url("../assets/img/contacts.jpg");
+  background-image: url('../assets/img/contacts.jpg');
 }
 @media screen and (max-width: 48em) {
   .contacts {
@@ -707,19 +723,14 @@ body {
   margin-bottom: 2rem;
   padding: 0.5rem 1.8rem;
   background: rgba(0, 0, 0, 0.5);
-  font: 2rem/2 "Inter", serif;
+  font: 2rem/2 'Inter', sans-serif;
+  color: white;
   border: 0.2rem solid #bdae82;
 }
 .contacts__box textarea {
   height: 10rem;
   margin-bottom: 2.3rem;
   resize: none;
-}
-.contacts__box input::-moz-placeholder, .contacts__box textarea::-moz-placeholder {
-  color: #bdae82;
-}
-.contacts__box input:-ms-input-placeholder, .contacts__box textarea:-ms-input-placeholder {
-  color: #bdae82;
 }
 .contacts__box input::placeholder,
 .contacts__box textarea::placeholder {
@@ -733,7 +744,9 @@ body {
 
 .section-heading__contacts {
   padding: 0 2rem;
-  font: bold 4rem/2 "Merriweather", sans-serif;
+  font: bold 4rem/2 'Merriweather', sans-serif;
   background-color: black;
   color: #bdae82;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

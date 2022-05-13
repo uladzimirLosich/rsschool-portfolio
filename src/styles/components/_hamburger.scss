@@ -49,10 +49,12 @@
         left: 0;
         @extend %transition;
       }
+
       &:before {
         content: '';
         top: -1rem;
       }
+
       &:after {
         content: '';
         top: 1rem;
@@ -63,9 +65,11 @@
       top: 0;
       transform: rotate(45deg);
     }
+
     &.open > span {
       background: transparent;
     }
+
     &.open > span:after {
       top: 0;
       transform: rotate(-45deg);

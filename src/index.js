@@ -1,23 +1,23 @@
 /* eslint-disable import/extensions */
-import toggleMenu from './modules/menu.js';
-import preloadImages from './modules/preload.js';
-import portfolioChangeItems from './modules/portfolio.js';
-import langSwitch from './modules/lang.js';
-import themeToggle from './modules/theme.js';
+import toggleMenu from './modules/menu.js'
+import preloadImages from './modules/preload.js'
+import portfolioChangeItems from './modules/portfolio.js'
+import langSwitch from './modules/lang.js'
+import themeToggle from './modules/theme.js'
 
 window.onload = () => {
-  toggleMenu();
-  preloadImages();
-  portfolioChangeItems();
-  langSwitch();
-  themeToggle();
-};
+  toggleMenu()
+  preloadImages()
+  portfolioChangeItems()
+  langSwitch()
+  themeToggle()
+}
 
-const theme = 'light';
+const theme = 'light'
 
 window.addEventListener('beforeunload', () => {
-  localStorage.setItem('theme', theme);
-});
+  localStorage.setItem('theme', theme)
+})
 
 /* window.addEventListener('load', () => {
   if (localStorage.getItem('theme')) {
